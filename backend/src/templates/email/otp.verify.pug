@@ -1,0 +1,150 @@
+doctype html
+html
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="x-apple-disable-message-reformatting")
+    meta(
+      name="format-detection"
+      content="telephone=no, date=no, address=no, email=no"
+    )
+
+    title Verify Your Email - Akrio Resume Analyzer
+
+  body(
+    style="margin:0; padding:0; background-color:#f4f7fb; font-family:Arial, Helvetica, sans-serif; color:#1f2937;"
+  )
+
+    //- Email preheader
+    div(
+      style="display:none; max-height:0; overflow:hidden; opacity:0; color:transparent; font-size:1px; line-height:1px;"
+    )
+      | Your Akrio Resume Analyzer verification code is #{otp}.
+
+    table(
+      role="presentation"
+      width="100%"
+      cellspacing="0"
+      cellpadding="0"
+      border="0"
+      style="width:100%; margin:0; padding:40px 16px; background-color:#f4f7fb;"
+    )
+      tr
+        td(align="center")
+
+          //- Main email container
+          table(
+            role="presentation"
+            width="100%"
+            cellspacing="0"
+            cellpadding="0"
+            border="0"
+            style="width:100%; max-width:560px; background-color:#ffffff; border-radius:12px; overflow:hidden;"
+          )
+
+            //- Header
+            tr
+              td(
+                align="center"
+                style="padding:32px 24px; background-color:#b6352d;"
+              )
+                h1(
+                  style="margin:0; padding:0; color:#ffffff; font-size:26px; line-height:34px; font-weight:700;"
+                )
+                  | Akrio Resume Analyzer
+
+                p(
+                  style="margin:8px 0 0; padding:0; color:#ffe0d2; font-size:14px; line-height:22px;"
+                )
+                  | AI-powered resume analysis for your next opportunity
+
+            //- Main content
+            tr
+              td(
+                style="padding:40px 32px;"
+              )
+
+                h2(
+                  style="margin:0 0 16px; padding:0; color:#24292d; font-size:23px; line-height:30px; font-weight:700;"
+                )
+                  | Verify Your Email
+
+                p(
+                  style="margin:0 0 18px; padding:0; color:#374151; font-size:16px; line-height:26px;"
+                )
+                  | Hello #{name},
+
+                p(
+                  style="margin:0 0 24px; padding:0; color:#6b7280; font-size:15px; line-height:24px;"
+                )
+                  | Thank you for creating your Akrio Resume Analyzer account.
+                  | Please use the verification code below to verify your email address
+                  | and complete your registration.
+
+                //- OTP container
+                table(
+                  role="presentation"
+                  width="100%"
+                  cellspacing="0"
+                  cellpadding="0"
+                  border="0"
+                  style="width:100%; margin:0 0 24px;"
+                )
+                  tr
+                    td(
+                      align="center"
+                      style="padding:24px 16px; background-color:#fff7e5; border:1px solid #ffe0a3; border-radius:10px;"
+                    )
+                      p(
+                        style="margin:0 0 10px; padding:0; color:#6b7280; font-size:12px; line-height:18px; font-weight:700; text-transform:uppercase; letter-spacing:1px;"
+                      )
+                        | Verification Code
+
+                      p(
+                        style="margin:0; padding:0; color:#b6352d; font-size:32px; line-height:40px; font-weight:700; letter-spacing:8px;"
+                      )
+                        | #{otp}
+
+                //- OTP expiry
+                p(
+                  style="margin:0 0 24px; padding:0; text-align:center; color:#6b7280; font-size:14px; line-height:22px;"
+                )
+                  | This verification code will expire in 5 minutes.
+
+                //- Security notice
+                table(
+                  role="presentation"
+                  width="100%"
+                  cellspacing="0"
+                  cellpadding="0"
+                  border="0"
+                  style="width:100%;"
+                )
+                  tr
+                    td(
+                      style="padding:16px; background-color:#f9fafb; border-left:4px solid #b6352d;"
+                    )
+                      p(
+                        style="margin:0; padding:0; color:#6b7280; font-size:13px; line-height:21px;"
+                      )
+                        strong Security notice:
+                        |  If you did not create an Akrio Resume Analyzer
+                        |  account, you can safely ignore this email.
+                        |  Never share your verification code with anyone.
+
+            //- Footer
+            tr
+              td(
+                align="center"
+                style="padding:24px 20px; background-color:#f8fafc; border-top:1px solid #e5e7eb;"
+              )
+                p(
+                  style="margin:0 0 8px; padding:0; color:#6b7280; font-size:13px; line-height:20px;"
+                )
+                  | © #{year} Akrio Resume Analyzer. All rights reserved.
+
+                p(
+                  style="margin:0; padding:0; color:#9ca3af; font-size:12px; line-height:18px;"
+                )
+                  | AI-powered resume analysis for your next opportunity
