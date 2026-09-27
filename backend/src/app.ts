@@ -13,7 +13,7 @@ app.use(express.urlencoded({ extended: true }));
 import resumeRouter from "./routes/resume.routes";
 //health check
 app.get("/", (req, res) => {
-  return sendSuccess(res, 200, "Hostel Management API is running");
+  return sendSuccess(res, 200, "Resume analyzerAPI is running");
 });
 //Routes
 app.use("/api/v1/auth", AuthRouter);
